@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1821EFCB1C4CB2DC007A75DE /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821EFCA1C4CB2DC007A75DE /* MyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		183585811C4C98240007C144 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183585801C4C98240007C144 /* cities.plist */; };
 		185A0FE91C0D379500B7CBA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FE81C0D379500B7CBA6 /* main.m */; };
 		185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1821EFC91C4CB2DC007A75DE /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		1821EFCA1C4CB2DC007A75DE /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		183585801C4C98240007C144 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		185A0FE41C0D379500B7CBA6 /* TestGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A0FE81C0D379500B7CBA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */,
 				185A0FED1C0D379500B7CBA6 /* ViewController.h */,
 				185A0FEE1C0D379500B7CBA6 /* ViewController.m */,
+				1821EFC91C4CB2DC007A75DE /* MyTableViewController.h */,
+				1821EFCA1C4CB2DC007A75DE /* MyTableViewController.m */,
 				185A0FF01C0D379500B7CBA6 /* Main.storyboard */,
 				185A0FF61C0D379500B7CBA6 /* Assets.xcassets */,
 				185A0FF81C0D379500B7CBA6 /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185A0FF51C0D379500B7CBA6 /* TestGit.xcdatamodeld in Sources */,
+				1821EFCB1C4CB2DC007A75DE /* MyTableViewController.m in Sources */,
 				185A0FEF1C0D379500B7CBA6 /* ViewController.m in Sources */,
 				185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */,
 				185A0FE91C0D379500B7CBA6 /* main.m in Sources */,
