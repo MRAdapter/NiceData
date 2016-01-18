@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183585811C4C98240007C144 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183585801C4C98240007C144 /* cities.plist */; };
 		185A0FE91C0D379500B7CBA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FE81C0D379500B7CBA6 /* main.m */; };
 		185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */; };
 		185A0FEF1C0D379500B7CBA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEE1C0D379500B7CBA6 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183585801C4C98240007C144 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		185A0FE41C0D379500B7CBA6 /* TestGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A0FE81C0D379500B7CBA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185A0FEA1C0D379500B7CBA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				185A0FF61C0D379500B7CBA6 /* Assets.xcassets */,
 				185A0FF81C0D379500B7CBA6 /* LaunchScreen.storyboard */,
 				185A0FFB1C0D379500B7CBA6 /* Info.plist */,
+				183585801C4C98240007C144 /* cities.plist */,
 				185A0FF31C0D379500B7CBA6 /* TestGit.xcdatamodeld */,
 				185A0FE71C0D379500B7CBA6 /* Supporting Files */,
 			);
@@ -142,6 +145,7 @@
 				185A0FFA1C0D379500B7CBA6 /* LaunchScreen.storyboard in Resources */,
 				185A0FF71C0D379500B7CBA6 /* Assets.xcassets in Resources */,
 				185A0FF21C0D379500B7CBA6 /* Main.storyboard in Resources */,
+				183585811C4C98240007C144 /* cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				185A10001C0D379500B7CBA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
