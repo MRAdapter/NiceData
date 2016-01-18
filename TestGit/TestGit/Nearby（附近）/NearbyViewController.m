@@ -9,6 +9,7 @@
 #import "NearbyViewController.h"
 
 @interface NearbyViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *baseTableView;
 
 @end
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIView* headView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 100)];
+    headView.backgroundColor=[UIColor redColor];
+    self.baseTableView.tableHeaderView=headView;
 }
 
 - (void)didReceiveMemoryWarning {

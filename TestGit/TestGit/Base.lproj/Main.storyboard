@@ -171,6 +171,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="baseTableView" destination="Sqn-C8-Qx5" id="7U1-Ls-Rue"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="995" y="1684"/>
@@ -338,6 +341,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="baseTableView" destination="DXx-JO-rHi" id="tnw-Sg-teB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjK-2N-J8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

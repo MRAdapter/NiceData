@@ -7,8 +7,9 @@
 //
 
 #import "GoodChooseViewController.h"
-
+#define kNuomiKey @"0092fefeaacc924bfca650a809c2cda5"
 @interface GoodChooseViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *baseTableView;
 
 @end
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIView* headView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 50)];
+    headView.backgroundColor=[UIColor redColor];
+    self.baseTableView.tableHeaderView=headView;
 }
 
 - (void)didReceiveMemoryWarning {

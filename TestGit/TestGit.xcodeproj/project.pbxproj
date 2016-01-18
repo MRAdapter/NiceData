@@ -70,8 +70,8 @@
 
 /* Begin PBXFileReference section */
 		183585801C4C98240007C144 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
-		183585831C4CAFC50007C144 /* GoodChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodChooseViewController.h; path = "../GoodChoose（精选）/GoodChooseViewController.h"; sourceTree = "<group>"; };
-		183585841C4CAFC50007C144 /* GoodChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodChooseViewController.m; path = "../GoodChoose（精选）/GoodChooseViewController.m"; sourceTree = "<group>"; };
+		183585831C4CAFC50007C144 /* GoodChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodChooseViewController.h; sourceTree = "<group>"; };
+		183585841C4CAFC50007C144 /* GoodChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodChooseViewController.m; sourceTree = "<group>"; };
 		183585871C4CCB9D0007C144 /* NearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyViewController.h; sourceTree = "<group>"; };
 		183585881C4CCB9D0007C144 /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
 		1835858C1C4CCDBB0007C144 /* ADPCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPCollectionView.h; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		183585C61C4CCEFA0007C144 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		183585C71C4CCEFA0007C144 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		183585C81C4CCEFA0007C144 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		183585CF1C4CCFA10007C144 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
-		183585D01C4CCFA10007C144 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
+		183585CF1C4CCFA10007C144 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		183585D01C4CCFA10007C144 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		183585D41C4CCFCA0007C144 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		183585D51C4CCFCA0007C144 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		183585D61C4CCFCA0007C144 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -206,6 +206,8 @@
 		183585821C4CAFAC0007C144 /* GoodChoose（精选） */ = {
 			isa = PBXGroup;
 			children = (
+				183585831C4CAFC50007C144 /* GoodChooseViewController.h */,
+				183585841C4CAFC50007C144 /* GoodChooseViewController.m */,
 			);
 			path = "GoodChoose（精选）";
 			sourceTree = "<group>";
@@ -222,8 +224,8 @@
 		1835858A1C4CCCCE0007C144 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				183585831C4CAFC50007C144 /* GoodChooseViewController.h */,
-				183585841C4CAFC50007C144 /* GoodChooseViewController.m */,
+				183585CF1C4CCFA10007C144 /* MBProgressHUD.h */,
+				183585D01C4CCFA10007C144 /* MBProgressHUD.m */,
 				183586121C4CCFD70007C144 /* MJExtension */,
 				183585D21C4CCFCA0007C144 /* MJRefresh */,
 				183585BB1C4CCEF90007C144 /* AFNetworking */,
@@ -236,8 +238,6 @@
 		1835858B1C4CCDBB0007C144 /* ADPCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				183585CF1C4CCFA10007C144 /* MBProgressHUD.h */,
-				183585D01C4CCFA10007C144 /* MBProgressHUD.m */,
 				1835858C1C4CCDBB0007C144 /* ADPCollectionView.h */,
 				1835858D1C4CCDBB0007C144 /* ADPCollectionView.m */,
 				1835858E1C4CCDBB0007C144 /* ADPCollectionViewCell.h */,
