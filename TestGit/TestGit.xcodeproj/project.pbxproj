@@ -59,6 +59,8 @@
 		1835862F1C4CCFD70007C144 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 183586231C4CCFD70007C144 /* NSObject+MJKeyValue.m */; };
 		183586301C4CCFD70007C144 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 183586251C4CCFD70007C144 /* NSObject+MJProperty.m */; };
 		183586311C4CCFD70007C144 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 183586271C4CCFD70007C144 /* NSString+MJExtension.m */; };
+		1835865A1C4D01250007C144 /* CateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183586581C4D01250007C144 /* CateViewController.m */; };
+		1835865B1C4D01250007C144 /* CateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183586591C4D01250007C144 /* CateViewController.xib */; };
 		185A0FE91C0D379500B7CBA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FE81C0D379500B7CBA6 /* main.m */; };
 		185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */; };
 		185A0FEF1C0D379500B7CBA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEE1C0D379500B7CBA6 /* ViewController.m */; };
@@ -179,6 +181,9 @@
 		183586251C4CCFD70007C144 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		183586261C4CCFD70007C144 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		183586271C4CCFD70007C144 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		183586571C4D01250007C144 /* CateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CateViewController.h; sourceTree = "<group>"; };
+		183586581C4D01250007C144 /* CateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CateViewController.m; sourceTree = "<group>"; };
+		183586591C4D01250007C144 /* CateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CateViewController.xib; sourceTree = "<group>"; };
 		185A0FE41C0D379500B7CBA6 /* TestGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A0FE81C0D379500B7CBA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185A0FEA1C0D379500B7CBA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -217,6 +222,9 @@
 			children = (
 				183585871C4CCB9D0007C144 /* NearbyViewController.h */,
 				183585881C4CCB9D0007C144 /* NearbyViewController.m */,
+				183586571C4D01250007C144 /* CateViewController.h */,
+				183586581C4D01250007C144 /* CateViewController.m */,
+				183586591C4D01250007C144 /* CateViewController.xib */,
 			);
 			path = "Nearby（附近）";
 			sourceTree = "<group>";
@@ -524,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185A0FFA1C0D379500B7CBA6 /* LaunchScreen.storyboard in Resources */,
+				1835865B1C4D01250007C144 /* CateViewController.xib in Resources */,
 				185A0FF71C0D379500B7CBA6 /* Assets.xcassets in Resources */,
 				185A0FF21C0D379500B7CBA6 /* Main.storyboard in Resources */,
 				1835860D1C4CCFCA0007C144 /* MJRefresh.bundle in Resources */,
@@ -544,6 +553,7 @@
 				1835860E1C4CCFCA0007C144 /* MJRefreshConst.m in Sources */,
 				183585B61C4CCE1E0007C144 /* MASViewConstraint.m in Sources */,
 				183585941C4CCDBB0007C144 /* APDCustomCollectionViewCell.m in Sources */,
+				1835865A1C4D01250007C144 /* CateViewController.m in Sources */,
 				1835860B1C4CCFCA0007C144 /* MJRefreshNormalHeader.m in Sources */,
 				183586091C4CCFCA0007C144 /* MJRefreshBackStateFooter.m in Sources */,
 				183585B51C4CCE1E0007C144 /* MASViewAttribute.m in Sources */,

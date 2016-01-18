@@ -7,7 +7,7 @@
 //
 
 #import "NearbyViewController.h"
-
+#import "CateViewController.h"
 @interface NearbyViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *baseTableView;
 @property (weak, nonatomic) IBOutlet UIButton *cateButton;
@@ -31,25 +31,30 @@
 }
 #pragma mark -- fourCategroy
 - (IBAction)chooseCate:(UIButton *)sender {
-    sender.selected=YES;
+    sender.selected=!sender.selected;
     self.sortBtn.selected=NO;
     self.chooseBtn.selected=NO;
     self.locationBtn.selected=NO;
+    CateViewController* cateVC=[CateViewController new];
+    cateVC.BigCateTBV.delegate=self;
+    cateVC.BigCateTBV.dataSource=self;
+    cateVC.view.frame=CGRectMake(0, 100, self.view.bounds.size.width, 620);
+    [self.view addSubview:cateVC.view];
 }
 - (IBAction)chooseLocation:(UIButton *)sender {
-    sender.selected=YES;
+    sender.selected=!sender.selected;
     self.cateButton.selected=NO;
     self.sortBtn.selected=NO;
     self.cateButton.selected=NO;
 }
 - (IBAction)chooseSort:(UIButton *)sender {
-    sender.selected=YES;
+    sender.selected=!sender.selected;
     self.cateButton.selected=NO;
     self.chooseBtn.selected=NO;
     self.locationBtn.selected=NO;
 }
 - (IBAction)chooseChoose:(UIButton *)sender {
-    sender.selected=YES;
+    sender.selected=!sender.selected;
     self.cateButton.selected=NO;
     self.sortBtn.selected=NO;
     self.locationBtn.selected=NO;
@@ -57,6 +62,7 @@
 
 #pragma mark -- UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    NSLog(@"%@",tableView);
     return 10;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
