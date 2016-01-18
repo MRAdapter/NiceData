@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q7e-qW-vRs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q7e-qW-vRs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
@@ -27,12 +27,15 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="500m" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="500m" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="chooseLocation:" destination="vAQ-4P-dnM" eventType="touchUpInside" id="Mo1-fV-ZFb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP7-pU-Hph">
                                         <rect key="frame" x="450" y="0.0" width="150" height="40"/>
@@ -41,12 +44,15 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="筛选" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="筛选" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="chooseChoose:" destination="vAQ-4P-dnM" eventType="touchUpInside" id="9Yw-JJ-TxL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xH-Ea-oWy">
                                         <rect key="frame" x="300" y="0.0" width="150" height="40"/>
@@ -55,12 +61,15 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="距离优先" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="距离优先" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="chooseSort:" destination="vAQ-4P-dnM" eventType="touchUpInside" id="25T-TH-Hud"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-6R-ueI">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
@@ -69,12 +78,15 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="全部分类" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="全部分类" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="chooseCate:" destination="vAQ-4P-dnM" eventType="touchUpInside" id="XcC-Xy-CgW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -172,6 +184,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="baseTableView" destination="Sqn-C8-Qx5" id="7U1-Ls-Rue"/>
+                        <outlet property="cateButton" destination="fDQ-6R-ueI" id="ytG-QZ-L9r"/>
+                        <outlet property="chooseBtn" destination="nP7-pU-Hph" id="TpC-ed-iiX"/>
+                        <outlet property="locationBtn" destination="tIp-bl-WQn" id="asE-7C-Td7"/>
+                        <outlet property="sortBtn" destination="8xH-Ea-oWy" id="i4m-E4-0La"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7k-OU-tXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +216,7 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="美食" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" image="上">
@@ -214,7 +230,7 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="筛选" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="筛选" image="上">
@@ -228,7 +244,7 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="默认排序" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="默认排序" image="上">
@@ -242,7 +258,7 @@
                                         <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="全程.热门" image="下"/>
-                                        <state key="selected" title="美食" image="上">
+                                        <state key="selected" image="上">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="全程.热门" image="上">

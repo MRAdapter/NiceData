@@ -10,7 +10,10 @@
 
 @interface NearbyViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *baseTableView;
-
+@property (weak, nonatomic) IBOutlet UIButton *cateButton;
+@property (weak, nonatomic) IBOutlet UIButton *locationBtn;
+@property (weak, nonatomic) IBOutlet UIButton *sortBtn;
+@property (weak, nonatomic) IBOutlet UIButton *chooseBtn;
 @end
 
 @implementation NearbyViewController
@@ -26,6 +29,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark -- fourCategroy
+- (IBAction)chooseCate:(UIButton *)sender {
+    sender.selected=YES;
+    self.sortBtn.selected=NO;
+    self.chooseBtn.selected=NO;
+    self.locationBtn.selected=NO;
+}
+- (IBAction)chooseLocation:(UIButton *)sender {
+    sender.selected=YES;
+    self.cateButton.selected=NO;
+    self.sortBtn.selected=NO;
+    self.cateButton.selected=NO;
+}
+- (IBAction)chooseSort:(UIButton *)sender {
+    sender.selected=YES;
+    self.cateButton.selected=NO;
+    self.chooseBtn.selected=NO;
+    self.locationBtn.selected=NO;
+}
+- (IBAction)chooseChoose:(UIButton *)sender {
+    sender.selected=YES;
+    self.cateButton.selected=NO;
+    self.sortBtn.selected=NO;
+    self.locationBtn.selected=NO;
+}
+
 #pragma mark -- UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 10;
