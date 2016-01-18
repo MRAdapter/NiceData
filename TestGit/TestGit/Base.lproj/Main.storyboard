@@ -9,7 +9,7 @@
         <scene sceneID="dEU-c0-kCK">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7k-OU-tXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vAQ-4P-dnM" sceneMemberID="viewController">
+                <viewController id="vAQ-4P-dnM" customClass="NearbyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FKp-Gl-BjA"/>
                         <viewControllerLayoutGuide type="bottom" id="KT3-OR-JmL"/>
@@ -122,41 +122,9 @@
                                 <rect key="frame" x="0.0" y="104" width="600" height="447"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="mbs-tZ-vOP">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市中山大道车陂" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJd-yx-I08">
-                                            <rect key="frame" x="0.0" y="0.0" width="580" height="21"/>
-                                            <animations/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Alk-r8-JiB"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3OV-6W-MBd">
-                                            <rect key="frame" x="580" y="0.0" width="20" height="21"/>
-                                            <animations/>
-                                        </imageView>
-                                    </subviews>
-                                    <animations/>
-                                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="3OV-6W-MBd" firstAttribute="leading" secondItem="kJd-yx-I08" secondAttribute="trailing" id="3Ya-O6-DFf"/>
-                                        <constraint firstItem="3OV-6W-MBd" firstAttribute="top" secondItem="mbs-tZ-vOP" secondAttribute="top" id="Ccd-YD-jb1"/>
-                                        <constraint firstItem="kJd-yx-I08" firstAttribute="leading" secondItem="mbs-tZ-vOP" secondAttribute="leading" id="LSh-vy-Vtw"/>
-                                        <constraint firstAttribute="trailing" secondItem="3OV-6W-MBd" secondAttribute="trailing" id="N3e-bG-aLV"/>
-                                        <constraint firstItem="3OV-6W-MBd" firstAttribute="bottom" secondItem="kJd-yx-I08" secondAttribute="bottom" id="Pw7-0m-xCy"/>
-                                        <constraint firstItem="kJd-yx-I08" firstAttribute="top" secondItem="mbs-tZ-vOP" secondAttribute="top" id="QZ1-y0-xc9"/>
-                                        <constraint firstAttribute="trailing" secondItem="kJd-yx-I08" secondAttribute="trailing" constant="20" id="ilG-Y2-De2"/>
-                                    </constraints>
-                                </view>
                                 <connections>
-                                    <outlet property="dataSource" destination="LSr-zw-DXp" id="pJ1-Yd-Aiq"/>
-                                    <outlet property="delegate" destination="LSr-zw-DXp" id="ZDp-xS-xnD"/>
+                                    <outlet property="dataSource" destination="vAQ-4P-dnM" id="Ogg-Cr-01F"/>
+                                    <outlet property="delegate" destination="vAQ-4P-dnM" id="06P-Xb-KB8"/>
                                 </connections>
                             </tableView>
                         </subviews>

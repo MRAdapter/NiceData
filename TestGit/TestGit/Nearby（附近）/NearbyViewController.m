@@ -1,18 +1,18 @@
 //
-//  GoodChooseViewController.m
+//  NearbyViewController.m
 //  TestGit
 //
 //  Created by apple on 16/1/18.
 //  Copyright © 2016年 Adapter. All rights reserved.
 //
 
-#import "GoodChooseViewController.h"
+#import "NearbyViewController.h"
 
-@interface GoodChooseViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NearbyViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
-@implementation GoodChooseViewController
+@implementation NearbyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +23,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 #pragma mark -- UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 10;
@@ -39,6 +38,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 20;
 }
+
 /*
 #pragma mark - Navigation
 
