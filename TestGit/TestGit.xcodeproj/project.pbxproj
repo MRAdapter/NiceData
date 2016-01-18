@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		183585811C4C98240007C144 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183585801C4C98240007C144 /* cities.plist */; };
+		183585851C4CAFC50007C144 /* GoodChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183585841C4CAFC50007C144 /* GoodChooseViewController.m */; };
 		185A0FE91C0D379500B7CBA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FE81C0D379500B7CBA6 /* main.m */; };
 		185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */; };
 		185A0FEF1C0D379500B7CBA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A0FEE1C0D379500B7CBA6 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		183585801C4C98240007C144 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		183585831C4CAFC50007C144 /* GoodChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodChooseViewController.h; sourceTree = "<group>"; };
+		183585841C4CAFC50007C144 /* GoodChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodChooseViewController.m; sourceTree = "<group>"; };
 		185A0FE41C0D379500B7CBA6 /* TestGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A0FE81C0D379500B7CBA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185A0FEA1C0D379500B7CBA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183585821C4CAFAC0007C144 /* GoodChoose（精选） */ = {
+			isa = PBXGroup;
+			children = (
+				183585831C4CAFC50007C144 /* GoodChooseViewController.h */,
+				183585841C4CAFC50007C144 /* GoodChooseViewController.m */,
+			);
+			path = "GoodChoose（精选）";
+			sourceTree = "<group>";
+		};
 		185A0FDB1C0D379500B7CBA6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,7 @@
 		185A0FE61C0D379500B7CBA6 /* TestGit */ = {
 			isa = PBXGroup;
 			children = (
+				183585821C4CAFAC0007C144 /* GoodChoose（精选） */,
 				185A0FEA1C0D379500B7CBA6 /* AppDelegate.h */,
 				185A0FEB1C0D379500B7CBA6 /* AppDelegate.m */,
 				185A0FED1C0D379500B7CBA6 /* ViewController.h */,
@@ -156,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183585851C4CAFC50007C144 /* GoodChooseViewController.m in Sources */,
 				185A0FF51C0D379500B7CBA6 /* TestGit.xcdatamodeld in Sources */,
 				185A0FEF1C0D379500B7CBA6 /* ViewController.m in Sources */,
 				185A0FEC1C0D379500B7CBA6 /* AppDelegate.m in Sources */,
